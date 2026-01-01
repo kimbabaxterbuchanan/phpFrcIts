@@ -1,0 +1,33 @@
+MySql Query Maker 1.0
+First   Revision: 2001-06-16
+Initial Release: 2001-06-05
+
+General Contributors and References
+Author: narain2@yahoo.com Present author and integrator
+Refrence: Albert Strasheim at http://www.geocities.com/fullung/sqlquery for sqlquery for PostgreSql database
+Reference: MySql book by Paul Dubois
+Reference: Php4 in 24 Hrs by Matt Zandstra.
+Numerous other authors on net for their ideas
+
+First Revision  statements:
+1. The previous browser related problems have been fixed.
+2. All the drop boxes are scrollable now.
+3. The final output is formatted in a table.
+
+Initial Release statements:
+1. MySql Query Maker 1.0 is  under the GPL (See LICENSE for details!)
+2. Make sure to edit the dbconn.inc file for login to your MySql database.
+
+Known Bug & Limitations:
+1. The sqldocs/z.sql file only works with the samp_db database from MySQL book 
+by Paul Dubois. You could download the file from newrider.com website.
+
+Shareware Notice:
+1. The program is free to download and use. If you use the program for
+business purposes, you should contribue $5(USD) or more to my program 
+development fund. The money can be deposited using paypal system on the
+internet in narain2@yahoo.com account. If you are in a currency restricted 
+country, you could donate the amount to a worthwhile charity.
+
+Jay P. Narain
+narain2@yahoo.com

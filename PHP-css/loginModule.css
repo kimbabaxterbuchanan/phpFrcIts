@@ -1,0 +1,62 @@
+body {
+        font: 11px Verdana, Arial, Helvetica, sans-serif;
+        color: #000000;
+        background-color: #ffffff;
+        margin: 0px;
+        padding: 20px 10px 0px;
+}
+.textfield {
+        font-size: 11px;
+        color: #333333;
+        background: #F7F7F7;
+        border: 1px solid #CCCCCC;
+        padding-left: 1px;
+}
+h1 {
+        color: #000000;
+        margin: 0px 0px 5px;
+        padding: 0px 0px 3px;
+        font: bold 18px Verdana, Arial, Helvetica, sans-serif;
+}
+
+a:link {
+        color: #222222;
+        text-decoration: underline;
+}
+a:visited {
+        text-decoration: underline;
+        color: #793911;
+}
+a:hover {
+        text-decoration: none;
+        color: #79f911;
+}
+a:active {
+        text-decoration: underline;
+        color: #222222;
+}
+.err {
+        color: #ff3333;
+}
+th {
+        font-weight: bold;
+        text-align: left;
+}
+
+.style100 {
+        font: bold 18px Verdana, Arial, Helvetica, sans-serif;
+}
+.style100a {
+        font: bold 18px Verdana, Arial, Helvetica, sans-serif;
+        color: #000000;
+        background: #777777;
+         border: #777777;
+}
+
+.style100b {
+        font: bold 40px Verdana, Arial, Helvetica, sans-serif;
+}
+.style101 {
+        height: 5px;
+        font: bold 5px Verdana, Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,105 @@
+<html>
+FRC Report Maker<br>
+<hr>
+<a href="../reportForm.php">Home</a>
+<br>
+<h2>Basic Insturctions for using the software</h2>
+<body>
+<p>
+Disclaimer: The instructions only show the depth of my knowledge.
+If anything goes wrong, please refer to the MySql Document or a
+book of your choice on MySql.
+</p>
+<p>
+User Guide:
+<p>
+FRC Report Maker is based on the SELECT syntax of MySql
+document. Although the select syntax has various options, only
+commonly used options have been incorporated in this release. If
+you are not familiar with the general SELECT syntax, please take
+a few moments to review it in your favorite document. This will help you
+to follow this program easily. 
+</p>
+<p>
+The Welcome screen gives you an option to either create a new 
+query or load an existing query for its execution. All the queries
+must be in the sqldocs directory. Clicking on Select... button will
+advance you to next screen.  
+</p>
+Details:
+<p>
+1. Choosing the Create option, brings forward the database selection
+box. Presently only one database can be selected.<br>If you chose Run
+option, please go to step 6.
+</p>
+<p>
+2. After selecting the database, you have an option to select multiple
+tables. This is important in case you want to make queries for related
+tables. The standard way to select multiple items is to hold the Ctrl
+key on your keyboard and click on the items you are choosing. This program
+aliases the tables as t0, t1, etc. 
+</p>
+<p>
+3. In this step you will be prompted to select fileds from the tables. The
+last items in the tables such as t0.* would be enough to pick up all the
+fields in the table. If you are selecting individual fields, do not choose
+t0.* type field. This screen also gives you an option to choose aggregate
+functions such as count, max, min, avg, std and sum. In the Expr column, you
+can enter the field name or a * as required by Select statement. A t0.* does
+not work whereas a * will work.
+</p>
+<p>
+4. The next screen is the general Select option screen. At the top you will
+see uptodate select statement. Do not try to correct any obvious error you
+may see at this point(like a , in a wrong place) as it is a static field. The
+various clause fields will be expalined in the order they are presented.
+</p>
+<p>
+	a. WHERE Clause has four fields namely field, operator, value and
+condition. The Field merely lists the fields selected in a dropdown select
+box. You can select up to five fields for your query. The operator is again
+a select box where you choose your appropriate opertaion. In the value field
+you will enter the parameters on which the where clause is being built. One
+simple example will be field=t0.id, operator=>,value=101 etc. The string must
+be quoted such as "John". In the LIKE operator case, you must use "j%" or its
+varitaion. The Condition blcok can be AND, OR or default blank. Make sure that
+the last condtion is always blank.
+</p>
+<p>
+	b. GROUP BY Clause has only Field select box. Default is none. You
+may choose one of the group by fields if you are choosing aggregate functions.
+</p>
+<p>
+	c. Having Clause has only one Expr Field. Enter your condition manually
+for a proper select operation(See MySql manual or your book of choice).
+Thanks for choosing MySql Query Maker 1.0 program!
+</p>
+<p>
+	d. ORDER BY Clause has Field, Expr field and Sort boxes. You can
+select a field form the dropdown select box. The optional Expr Field is
+required in some special cases. The Sort select can be ASC for ascending and
+DESC for descending sort.
+</p>
+<p>
+	e. The LIMIT Clause makes you choose how many rows you want to be
+displayed. The Offset is the starting row number(which can be omitted if you
+want to start at row 1) and number of rows is the number of desired rows to be
+displayed.
+</p>
+<p>
+5. The next screen shows the final assembled query with the available otions.
+You can edit the query in the textarea. If the execution of this query gives
+you an error, you can come back here and conveniently edit your query and run
+it again without going over the entire process. You have an option to save
+this query or to load a completely different query at this point. All the
+queries are saved in the sqldocs directory.
+</p>
+<p>
+6. If you chose PickQuery or Run option, you will be prompted to pick a
+file from the sqldocs directory and prescribe the name of the database
+associated with the query. Executing the LoadQuery button, you will be in
+the query execution area. The details of this screen are outlined in step 5.
+<p>
+</body>
+</html>
+
